@@ -1,0 +1,2468 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "amplify-app-csbailey-sandbox-5834d5d03c.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "amplify-app-csbailey-sandbox-5834d5d03c.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "amplify-app-csbailey-sandbox-5834d5d03c": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "amplify-app-csbailey-sandbox-5834d5d03c.template.json",
+        "terminationProtection": false,
+        "tags": {
+          "amplify:deployment-type": "sandbox",
+          "created-by": "amplify"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/3a885a26ed42f1af372d7e840a933d367d2853120fbafc8641d65ff093828f5d.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "amplify-app-csbailey-sandbox-5834d5d03c.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "amplify-app-csbailey-sandbox-5834d5d03c.assets"
+      ],
+      "metadata": {
+        "/amplify-app-csbailey-sandbox-5834d5d03c": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "amplify:deployment-type",
+                "Value": "sandbox"
+              },
+              {
+                "Key": "created-by",
+                "Value": "amplify"
+              }
+            ]
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/deploymentType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deploymentType"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/region": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "region"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/auth/amplifyAuth/UserPool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthUserPool4BA7F805"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/auth/amplifyAuth/UserPoolAppClient/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthUserPoolAppClient2626C6F8"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/auth/amplifyAuth/IdentityPool": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthIdentityPool3FDE84CC"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/auth/amplifyAuth/authenticatedUserRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthauthenticatedUserRoleD8DA3689"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/auth/amplifyAuth/unauthenticatedUserRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthunauthenticatedUserRole2B524D9E"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/auth/amplifyAuth/IdentityPoolRoleAttachment": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthIdentityPoolRoleAttachment045F17C8"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/auth/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/auth/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/auth/amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthUserPoolB7FC5205Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthUserPoolB7FC5205Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/auth/amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthUserPoolAppClient2951993CRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthUserPoolAppClient2951993CRef"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/auth/amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthIdentityPoolD953CFBFRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthIdentityPoolD953CFBFRef"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/auth/amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthauthenticatedUserRole4EF6F676Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthauthenticatedUserRole4EF6F676Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/auth/amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthunauthenticatedUserRole054902C9Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthunauthenticatedUserRole054902C9Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/auth.NestedStack/auth.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "auth179371D7"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/userPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "userPoolId"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/webClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "webClientId"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/identityPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "identityPoolId"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/authRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "authRegion"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/allowUnauthenticatedIdentities": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "allowUnauthenticatedIdentities"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/signupAttributes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "signupAttributes"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/usernameAttributes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "usernameAttributes"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/verificationMechanisms": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "verificationMechanisms"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/passwordPolicyMinLength": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "passwordPolicyMinLength"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/passwordPolicyRequirements": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "passwordPolicyRequirements"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/mfaConfiguration": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mfaConfiguration"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/mfaTypes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mfaTypes"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/socialProviders": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "socialProviders"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/oauthCognitoDomain": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthCognitoDomain"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/oauthScope": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthScope"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/oauthRedirectSignIn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthRedirectSignIn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/oauthRedirectSignOut": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthRedirectSignOut"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/oauthResponseType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthResponseType"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/oauthClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthClientId"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/aws-shorts/Bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsshortsBucketD126983B"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/aws-shorts/Bucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsshortsBucketPolicyC2C76E67"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/aws-shorts/Bucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsshortsBucketAutoDeleteObjectsCustomResourceC4E550B8"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/LatestNodeRuntimeMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LatestNodeRuntimeMap"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/AWS_SHORTS_BUCKET_NAMEParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSSHORTSBUCKETNAMEParameter09952144"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/storageAccess1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storageAccess1509137B9"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/UploadBackgroundImage/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UploadBackgroundImageAwsCliLayerF4DD0ED8"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/UploadBackgroundImage/CustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UploadBackgroundImageCustomResource16F8F1A5"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/reference-to-amplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputs.amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthauthenticatedUserRole4EF6F676Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthauthenticatedUserRole4EF6F676Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/amplifyappcsbaileysandbox5834d5d03cstorageawsshortsBucketD0C3C9ADRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cstorageawsshortsBucketD0C3C9ADRef"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage/amplifyappcsbaileysandbox5834d5d03cstorageawsshortsBucketD0C3C9ADArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cstorageawsshortsBucketD0C3C9ADArn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storage.NestedStack/storage.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storage0EC3F24A"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/storageRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storageRegion"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/bucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "bucketName"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/GraphQLAPI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsGraphQLAPI6AD910CF"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/GraphQLAPI/TransformerSchema": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsGraphQLAPITransformerSchema17AFACA2"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/GraphQLAPI/NONE_DS": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NONE_DS"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/GraphQLAPI/NONE_DS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsGraphQLAPINONEDS113926CE"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NONE_DS"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyTableManager/AmplifyManagedTableIsCompleteRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableIsCompleteRoleF825222C"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyTableManager/AmplifyManagedTableOnEventRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableOnEventRoleB4E71DEA"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyTableManager/AmplifyManagedTableOnEventRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableOnEventRoleDefaultPolicyF6DABCB6"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyTableManager/TableManagerCustomProvider/framework-onEvent/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableManagerCustomProviderframeworkonEvent1DFC2ECC"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyTableManager/TableManagerCustomProvider/framework-isComplete/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableManagerCustomProviderframeworkisComplete2E51021B"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachineRole470BE899"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachineRoleDefaultPolicy89F3836A"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyTableManager/AmplifyTableWaiterStateMachine/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachine060600BC"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyTableManager/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyTableManager/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyTableManager/reference-to-amplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyTableManager/amplifyappcsbaileysandbox5834d5d03cdataAWSShortsAmplifyTableManagerTableManagerCustomProviderframeworkonEventC006DF23Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cdataAWSShortsAmplifyTableManagerTableManagerCustomProviderframeworkonEventC006DF23Arn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyTableManager.NestedStack/AmplifyTableManager.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource41097CDD"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/DynamoDBModelTableReadIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableReadIOPS"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/DynamoDBModelTableWriteIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableWriteIOPS"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/DynamoDBBillingMode": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBBillingMode"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/DynamoDBEnablePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnablePointInTimeRecovery"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/DynamoDBEnableServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnableServerSideEncryption"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/HasEnvironmentParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HasEnvironmentParameter"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/ShouldUseServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUseServerSideEncryption"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/ShouldUsePayPerRequestBilling": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePayPerRequestBilling"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/ShouldUsePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePointInTimeRecovery"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/HistoryTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "History"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/HistoryTable/Default/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HistoryTable"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "History"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/CustomTableHistoryTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "History"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/GetAttHistoryTableStreamArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttHistoryTableStreamArn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/GetAttHistoryTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttHistoryTableName"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/HistoryIAMRole": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "HistoryIAMRole"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/HistoryIAMRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HistoryIAMRoleE20D1110"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "HistoryIAMRole"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/HistoryDataSource": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "HistoryTable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/HistoryDataSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HistoryDataSource"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "HistoryTable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/QuerygetHistoryauth0Function/QuerygetHistoryauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetHistoryauth0FunctionQuerygetHistoryauth0FunctionAppSyncFunction2CC81DC7"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetHistoryauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/QuerygetHistorypostAuth0Function/QuerygetHistorypostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetHistorypostAuth0FunctionQuerygetHistorypostAuth0FunctionAppSyncFunction9F4D2DE4"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetHistorypostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/QueryGetHistoryDataResolverFn/QueryGetHistoryDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryGetHistoryDataResolverFnQueryGetHistoryDataResolverFnAppSyncFunction6C2A210A"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryGetHistoryDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/queryGetHistoryResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetHistoryResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.getHistory"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/QuerylistHistoriesauth0Function/QuerylistHistoriesauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistHistoriesauth0FunctionQuerylistHistoriesauth0FunctionAppSyncFunction60127B75"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistHistoriesauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/QuerylistHistoriespostAuth0Function/QuerylistHistoriespostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistHistoriespostAuth0FunctionQuerylistHistoriespostAuth0FunctionAppSyncFunction61C01B44"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistHistoriespostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/QueryListHistoriesDataResolverFn/QueryListHistoriesDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryListHistoriesDataResolverFnQueryListHistoriesDataResolverFnAppSyncFunction6055220A"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryListHistoriesDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/queryListHistoriesResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ListHistoryResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.listHistories"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/MutationcreateHistoryinit0Function/MutationcreateHistoryinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateHistoryinit0FunctionMutationcreateHistoryinit0FunctionAppSyncFunctionCFBAA6DB"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateHistoryinit0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/MutationcreateHistoryauth0Function/MutationcreateHistoryauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateHistoryauth0FunctionMutationcreateHistoryauth0FunctionAppSyncFunction2B10D464"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateHistoryauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/MutationcreateHistorypostAuth0Function/MutationcreateHistorypostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateHistorypostAuth0FunctionMutationcreateHistorypostAuth0FunctionAppSyncFunction5EA71314"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateHistorypostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/MutationCreateHistoryDataResolverFn/MutationCreateHistoryDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationCreateHistoryDataResolverFnMutationCreateHistoryDataResolverFnAppSyncFunction5C2F7A08"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationCreateHistoryDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/mutationCreateHistoryResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CreateHistoryResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.createHistory"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/MutationupdateHistoryinit0Function/MutationupdateHistoryinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateHistoryinit0FunctionMutationupdateHistoryinit0FunctionAppSyncFunction4FF075C2"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateHistoryinit0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/MutationupdateHistoryauth0Function/MutationupdateHistoryauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateHistoryauth0FunctionMutationupdateHistoryauth0FunctionAppSyncFunctionE5070C00"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateHistoryauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/MutationupdateHistorypostAuth0Function/MutationupdateHistorypostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateHistorypostAuth0FunctionMutationupdateHistorypostAuth0FunctionAppSyncFunctionF7F7669A"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateHistorypostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/MutationUpdateHistoryDataResolverFn/MutationUpdateHistoryDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationUpdateHistoryDataResolverFnMutationUpdateHistoryDataResolverFnAppSyncFunctionC2167BF8"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationUpdateHistoryDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/mutationUpdateHistoryResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UpdateHistoryResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.updateHistory"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/MutationdeleteHistoryauth0Function/MutationdeleteHistoryauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteHistoryauth0FunctionMutationdeleteHistoryauth0FunctionAppSyncFunctionE73E4866"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteHistoryauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/MutationdeleteHistorypostAuth0Function/MutationdeleteHistorypostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteHistorypostAuth0FunctionMutationdeleteHistorypostAuth0FunctionAppSyncFunction513DAE0D"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteHistorypostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/MutationDeleteHistoryDataResolverFn/MutationDeleteHistoryDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationDeleteHistoryDataResolverFnMutationDeleteHistoryDataResolverFnAppSyncFunction3DE66859"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationDeleteHistoryDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/mutationDeleteHistoryResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeleteHistoryResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.deleteHistory"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/SubscriptiononCreateHistoryauth0Function/SubscriptiononCreateHistoryauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateHistoryauth0FunctionSubscriptiononCreateHistoryauth0FunctionAppSyncFunction9282B3EB"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateHistoryauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/SubscriptiononCreateHistorypostAuth0Function/SubscriptiononCreateHistorypostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateHistorypostAuth0FunctionSubscriptiononCreateHistorypostAuth0FunctionAppSyncFunctionECBC5032"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateHistorypostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/SubscriptionOnCreateHistoryDataResolverFn/SubscriptionOnCreateHistoryDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnCreateHistoryDataResolverFnSubscriptionOnCreateHistoryDataResolverFnAppSyncFunctionB025D9A2"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnCreateHistoryDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/subscriptionOnCreateHistoryResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateHistoryResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onCreateHistory"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/SubscriptiononUpdateHistoryauth0Function/SubscriptiononUpdateHistoryauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateHistoryauth0FunctionSubscriptiononUpdateHistoryauth0FunctionAppSyncFunction75C61A8E"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateHistoryauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/SubscriptiononUpdateHistorypostAuth0Function/SubscriptiononUpdateHistorypostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateHistorypostAuth0FunctionSubscriptiononUpdateHistorypostAuth0FunctionAppSyncFunctionB9112C6F"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateHistorypostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/SubscriptionOnUpdateHistoryDataResolverFn/SubscriptionOnUpdateHistoryDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnUpdateHistoryDataResolverFnSubscriptionOnUpdateHistoryDataResolverFnAppSyncFunction54E93645"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnUpdateHistoryDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/subscriptionOnUpdateHistoryResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateHistoryResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onUpdateHistory"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/SubscriptiononDeleteHistoryauth0Function/SubscriptiononDeleteHistoryauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteHistoryauth0FunctionSubscriptiononDeleteHistoryauth0FunctionAppSyncFunction5EF34AAE"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteHistoryauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/SubscriptiononDeleteHistorypostAuth0Function/SubscriptiononDeleteHistorypostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteHistorypostAuth0FunctionSubscriptiononDeleteHistorypostAuth0FunctionAppSyncFunctionE1717016"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteHistorypostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/SubscriptionOnDeleteHistoryDataResolverFn/SubscriptionOnDeleteHistoryDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnDeleteHistoryDataResolverFnSubscriptionOnDeleteHistoryDataResolverFnAppSyncFunction78371B79"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnDeleteHistoryDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/subscriptionOnDeleteHistoryResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteHistoryResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onDeleteHistory"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/HistoryOwnerDataResolverFn/HistoryOwnerDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HistoryOwnerDataResolverFnHistoryOwnerDataResolverFnAppSyncFunctionCABD500C"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "HistoryOwnerDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/historyOwnerResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HistoryownerResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "History.owner"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/reference-to-amplifyappcsbaileysandbox5834d5d03cdataAWSShortsAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource8D3B00DCOutputs.amplifyappcsbaileysandbox5834d5d03cdataAWSShortsAmplifyTableManagerTableManagerCustomProviderframeworkonEventC006DF23Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource8D3B00DCOutputsamplifyappcsbaileysandbox5834d5d03cdataAWSShortsAmplifyTableManagerTableManagerCustomProviderframe7C83AC16"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/reference-to-amplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/reference-to-amplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPINONEDS7279B4CDName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPINONEDS7279B4CDName"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/reference-to-amplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputs.amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthauthenticatedUserRole4EF6F676Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthauthenticatedUserRole4EF6F676Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/reference-to-amplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputs.amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthunauthenticatedUserRole054902C9Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthunauthenticatedUserRole054902C9Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/reference-to-amplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputs.amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthIdentityPoolD953CFBFRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthIdentityPoolD953CFBFRef"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History/amplifyappcsbaileysandbox5834d5d03cdataAWSShortsHistoryHistoryTable666C312ATableArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cdataAWSShortsHistoryHistoryTable666C312ATableArn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/History.NestedStack/History.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsHistoryNestedStackHistoryNestedStackResource51D7C9BB"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/DynamoDBModelTableReadIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableReadIOPS"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/DynamoDBModelTableWriteIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableWriteIOPS"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/DynamoDBBillingMode": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBBillingMode"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/DynamoDBEnablePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnablePointInTimeRecovery"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/DynamoDBEnableServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnableServerSideEncryption"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/HasEnvironmentParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HasEnvironmentParameter"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/ShouldUseServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUseServerSideEncryption"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/ShouldUsePayPerRequestBilling": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePayPerRequestBilling"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/ShouldUsePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePointInTimeRecovery"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/HighlightTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Highlight"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/HighlightTable/Default/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HighlightTable"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Highlight"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/CustomTableHighlightTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Highlight"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/GetAttHighlightTableStreamArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttHighlightTableStreamArn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/GetAttHighlightTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttHighlightTableName"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/HighlightIAMRole": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "HighlightIAMRole"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/HighlightIAMRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HighlightIAMRole4A4B8B21"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "HighlightIAMRole"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/HighlightDataSource": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "HighlightTable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/HighlightDataSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HighlightDataSource"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "HighlightTable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/QuerygetHighlightpreAuth0Function/QuerygetHighlightpreAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetHighlightpreAuth0FunctionQuerygetHighlightpreAuth0FunctionAppSyncFunction88E23B44"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetHighlightpreAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/QuerygetHighlightauth0Function/QuerygetHighlightauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetHighlightauth0FunctionQuerygetHighlightauth0FunctionAppSyncFunctionA58E719D"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetHighlightauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/QuerygetHighlightpostAuth0Function/QuerygetHighlightpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetHighlightpostAuth0FunctionQuerygetHighlightpostAuth0FunctionAppSyncFunctionC2886B5F"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetHighlightpostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/QueryGetHighlightDataResolverFn/QueryGetHighlightDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryGetHighlightDataResolverFnQueryGetHighlightDataResolverFnAppSyncFunction3A724EA8"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryGetHighlightDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/queryGetHighlightResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetHighlightResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.getHighlight"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/QuerylistHighlightspreAuth0Function/QuerylistHighlightspreAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistHighlightspreAuth0FunctionQuerylistHighlightspreAuth0FunctionAppSyncFunctionB895BB66"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistHighlightspreAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/QuerylistHighlightsauth0Function/QuerylistHighlightsauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistHighlightsauth0FunctionQuerylistHighlightsauth0FunctionAppSyncFunctionF4DE3982"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistHighlightsauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/QuerylistHighlightspostAuth0Function/QuerylistHighlightspostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistHighlightspostAuth0FunctionQuerylistHighlightspostAuth0FunctionAppSyncFunctionEA1E6B3D"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistHighlightspostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/QueryListHighlightsDataResolverFn/QueryListHighlightsDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryListHighlightsDataResolverFnQueryListHighlightsDataResolverFnAppSyncFunction9E2755F9"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryListHighlightsDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/queryListHighlightsResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ListHighlightResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.listHighlights"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/MutationcreateHighlightinit0Function/MutationcreateHighlightinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateHighlightinit0FunctionMutationcreateHighlightinit0FunctionAppSyncFunctionE9C3E53D"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateHighlightinit0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/MutationcreateHighlightpreAuth0Function/MutationcreateHighlightpreAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateHighlightpreAuth0FunctionMutationcreateHighlightpreAuth0FunctionAppSyncFunctionBDE513F7"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateHighlightpreAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/MutationcreateHighlightauth0Function/MutationcreateHighlightauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateHighlightauth0FunctionMutationcreateHighlightauth0FunctionAppSyncFunction4D3CB422"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateHighlightauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/MutationcreateHighlightpostAuth0Function/MutationcreateHighlightpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateHighlightpostAuth0FunctionMutationcreateHighlightpostAuth0FunctionAppSyncFunction867E9C43"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateHighlightpostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/MutationCreateHighlightDataResolverFn/MutationCreateHighlightDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationCreateHighlightDataResolverFnMutationCreateHighlightDataResolverFnAppSyncFunction1F12E400"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationCreateHighlightDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/mutationCreateHighlightResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CreateHighlightResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.createHighlight"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/MutationupdateHighlightinit0Function/MutationupdateHighlightinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateHighlightinit0FunctionMutationupdateHighlightinit0FunctionAppSyncFunction69800B13"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateHighlightinit0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/MutationupdateHighlightpreAuth0Function/MutationupdateHighlightpreAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateHighlightpreAuth0FunctionMutationupdateHighlightpreAuth0FunctionAppSyncFunction50FFF0D7"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateHighlightpreAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/MutationupdateHighlightauth0Function/MutationupdateHighlightauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateHighlightauth0FunctionMutationupdateHighlightauth0FunctionAppSyncFunction29CD19BD"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateHighlightauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/MutationupdateHighlightpostAuth0Function/MutationupdateHighlightpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateHighlightpostAuth0FunctionMutationupdateHighlightpostAuth0FunctionAppSyncFunctionAFE3B7FE"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateHighlightpostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/MutationUpdateHighlightDataResolverFn/MutationUpdateHighlightDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationUpdateHighlightDataResolverFnMutationUpdateHighlightDataResolverFnAppSyncFunctionB4EA68AA"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationUpdateHighlightDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/mutationUpdateHighlightResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UpdateHighlightResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.updateHighlight"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/MutationdeleteHighlightpreAuth0Function/MutationdeleteHighlightpreAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteHighlightpreAuth0FunctionMutationdeleteHighlightpreAuth0FunctionAppSyncFunction761B5F07"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteHighlightpreAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/MutationdeleteHighlightauth0Function/MutationdeleteHighlightauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteHighlightauth0FunctionMutationdeleteHighlightauth0FunctionAppSyncFunctionE825D0B6"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteHighlightauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/MutationdeleteHighlightpostAuth0Function/MutationdeleteHighlightpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteHighlightpostAuth0FunctionMutationdeleteHighlightpostAuth0FunctionAppSyncFunction1D4DE325"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteHighlightpostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/MutationDeleteHighlightDataResolverFn/MutationDeleteHighlightDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationDeleteHighlightDataResolverFnMutationDeleteHighlightDataResolverFnAppSyncFunctionBDF74F8E"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationDeleteHighlightDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/mutationDeleteHighlightResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeleteHighlightResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.deleteHighlight"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/SubscriptiononCreateHighlightauth0Function/SubscriptiononCreateHighlightauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateHighlightauth0FunctionSubscriptiononCreateHighlightauth0FunctionAppSyncFunctionB510C2EA"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateHighlightauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/SubscriptiononCreateHighlightpostAuth0Function/SubscriptiononCreateHighlightpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateHighlightpostAuth0FunctionSubscriptiononCreateHighlightpostAuth0FunctionAppSyncFunction49C45EC0"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateHighlightpostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/SubscriptionOnCreateHighlightDataResolverFn/SubscriptionOnCreateHighlightDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnCreateHighlightDataResolverFnSubscriptionOnCreateHighlightDataResolverFnAppSyncFunction0E089486"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnCreateHighlightDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/subscriptionOnCreateHighlightResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateHighlightResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onCreateHighlight"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/SubscriptiononUpdateHighlightauth0Function/SubscriptiononUpdateHighlightauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateHighlightauth0FunctionSubscriptiononUpdateHighlightauth0FunctionAppSyncFunction51E218FD"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateHighlightauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/SubscriptiononUpdateHighlightpostAuth0Function/SubscriptiononUpdateHighlightpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateHighlightpostAuth0FunctionSubscriptiononUpdateHighlightpostAuth0FunctionAppSyncFunction011310D1"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateHighlightpostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/SubscriptionOnUpdateHighlightDataResolverFn/SubscriptionOnUpdateHighlightDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnUpdateHighlightDataResolverFnSubscriptionOnUpdateHighlightDataResolverFnAppSyncFunction5A159507"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnUpdateHighlightDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/subscriptionOnUpdateHighlightResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateHighlightResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onUpdateHighlight"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/SubscriptiononDeleteHighlightauth0Function/SubscriptiononDeleteHighlightauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteHighlightauth0FunctionSubscriptiononDeleteHighlightauth0FunctionAppSyncFunctionE52C87DB"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteHighlightauth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/SubscriptiononDeleteHighlightpostAuth0Function/SubscriptiononDeleteHighlightpostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteHighlightpostAuth0FunctionSubscriptiononDeleteHighlightpostAuth0FunctionAppSyncFunctionC8E7B2F9"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteHighlightpostAuth0Function"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/SubscriptionOnDeleteHighlightDataResolverFn/SubscriptionOnDeleteHighlightDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnDeleteHighlightDataResolverFnSubscriptionOnDeleteHighlightDataResolverFnAppSyncFunctionEA34A5BE"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnDeleteHighlightDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/subscriptionOnDeleteHighlightResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteHighlightResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onDeleteHighlight"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/HighlightOwnerDataResolverFn/HighlightOwnerDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HighlightOwnerDataResolverFnHighlightOwnerDataResolverFnAppSyncFunctionA902BFFE"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "HighlightOwnerDataResolverFn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/highlightOwnerResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HighlightownerResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Highlight.owner"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/reference-to-amplifyappcsbaileysandbox5834d5d03cdataAWSShortsAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource8D3B00DCOutputs.amplifyappcsbaileysandbox5834d5d03cdataAWSShortsAmplifyTableManagerTableManagerCustomProviderframeworkonEventC006DF23Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource8D3B00DCOutputsamplifyappcsbaileysandbox5834d5d03cdataAWSShortsAmplifyTableManagerTableManagerCustomProviderframe7C83AC16"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/reference-to-amplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/reference-to-amplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPINONEDS7279B4CDName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPINONEDS7279B4CDName"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/reference-to-amplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputs.amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthauthenticatedUserRole4EF6F676Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthauthenticatedUserRole4EF6F676Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/reference-to-amplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputs.amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthunauthenticatedUserRole054902C9Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthunauthenticatedUserRole054902C9Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/reference-to-amplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputs.amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthIdentityPoolD953CFBFRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthIdentityPoolD953CFBFRef"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight/amplifyappcsbaileysandbox5834d5d03cdataAWSShortsHighlightHighlightTable37339103TableArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cdataAWSShortsHighlightHighlightTable37339103TableArn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/Highlight.NestedStack/Highlight.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsHighlightNestedStackHighlightNestedStackResource23887E12"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/HasEnvironmentParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HasEnvironmentParameter"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/FnPublishLambdaDataSource": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "FnPublishLambdaDataSource"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/FnPublishLambdaDataSource/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FnPublishLambdaDataSourceServiceRole57F064DE"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/FnPublishLambdaDataSource/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FnPublishLambdaDataSourceServiceRoleDefaultPolicy8B7A66C3"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/FnPublishLambdaDataSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FnPublishLambdaDataSource"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "FnPublishLambdaDataSource"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/InvokeFnPublishLambdaDataSource/InvokeFnPublishLambdaDataSource.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InvokeFnPublishLambdaDataSourceInvokeFnPublishLambdaDataSourceAppSyncFunction72586A95"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "InvokeFnPublishLambdaDataSource"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/mutationPublishResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationpublishResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.publish"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/FnGenerateShortLambdaDataSource": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "FnGenerateShortLambdaDataSource"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/FnGenerateShortLambdaDataSource/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FnGenerateShortLambdaDataSourceServiceRole9B48900F"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/FnGenerateShortLambdaDataSource/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FnGenerateShortLambdaDataSourceServiceRoleDefaultPolicy8F1A6FA6"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/FnGenerateShortLambdaDataSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FnGenerateShortLambdaDataSource"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "FnGenerateShortLambdaDataSource"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/InvokeFnGenerateShortLambdaDataSource/InvokeFnGenerateShortLambdaDataSource.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "InvokeFnGenerateShortLambdaDataSourceInvokeFnGenerateShortLambdaDataSourceAppSyncFunction3AC69472"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "InvokeFnGenerateShortLambdaDataSource"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/queryGenerateShortResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygenerateShortResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.generateShort"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/MutationPublishAuthFN/MutationPublishAuthFN.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationPublishAuthFNMutationPublishAuthFNAppSyncFunction507E9F84"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationPublishAuthFN"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/QueryGenerateShortAuthFN/QueryGenerateShortAuthFN.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryGenerateShortAuthFNQueryGenerateShortAuthFNAppSyncFunction18E34601"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryGenerateShortAuthFN"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/reference-to-amplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputs.amplifyappcsbaileysandbox5834d5d03cfunctionpublishlambdaCFF95E6FArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputsamplifyappcsbaileysandbox5834d5d03cfunctionpublishlambdaCFF95E6FArn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/reference-to-amplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/reference-to-amplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputs.amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthauthenticatedUserRole4EF6F676Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthauthenticatedUserRole4EF6F676Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/reference-to-amplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputs.amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthunauthenticatedUserRole054902C9Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthunauthenticatedUserRole054902C9Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/reference-to-amplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputs.amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthIdentityPoolD953CFBFRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthIdentityPoolD953CFBFRef"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/reference-to-amplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputs.amplifyappcsbaileysandbox5834d5d03cfunctiongenerateShortlambdaEF597C67Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputsamplifyappcsbaileysandbox5834d5d03cfunctiongenerateShortlambdaEF597C67Arn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/reference-to-amplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPINONEDS7279B4CDName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPINONEDS7279B4CDName"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack.NestedStack/FunctionDirectiveStack.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsFunctionDirectiveStackNestedStackFunctionDirectiveStackNestedStackResource6AAC83A4"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AuthRolePolicy01/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsAuthRolePolicy01583A9B0F"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/UnauthRolePolicy01/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsUnauthRolePolicy0163516A3C"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsAmplifyCodegenAssetsAmplifyCodegenAssetsBucketED6C91B9"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsAmplifyCodegenAssetsAmplifyCodegenAssetsBucketPolicy25DA44F6"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsAmplifyCodegenAssetsAmplifyCodegenAssetsBucketAutoDeleteObjectsCustomResource855BEBB7"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentAwsCliLayer2DCC32BF"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/CustomResource-1536MiB/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiBD21D83C1"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/L2GraphqlApi/EventBridgeDataSource/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsL2GraphqlApiEventBridgeDataSourceServiceRole2C4E280F"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/L2GraphqlApi/EventBridgeDataSource/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsL2GraphqlApiEventBridgeDataSourceServiceRoleDefaultPolicy024BEB69"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/L2GraphqlApi/EventBridgeDataSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSShortsL2GraphqlApiEventBridgeDataSource4538BADA"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/DynamoDBModelTableReadIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableReadIOPS"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/DynamoDBModelTableWriteIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableWriteIOPS"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/DynamoDBBillingMode": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBBillingMode"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/DynamoDBEnablePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnablePointInTimeRecovery"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/DynamoDBEnableServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnableServerSideEncryption"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/LatestNodeRuntimeMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LatestNodeRuntimeMap"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleA41FC8C2"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleDefaultPolicyFF1C635B"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBC5D8AB21"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/Fn_Subscription_receive_1": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FnSubscriptionreceive1"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/Resolver_Subscription_receive": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ResolverSubscriptionreceive"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/AWS_SHORTS_GRAPHQL_ENDPOINTParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AWSSHORTSGRAPHQLENDPOINTParameter35FE71A4"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/reference-to-amplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputs.amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthUserPoolB7FC5205Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthUserPoolB7FC5205Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/reference-to-amplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputs.amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthauthenticatedUserRole4EF6F676Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthauthenticatedUserRole4EF6F676Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/reference-to-amplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputs.amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthunauthenticatedUserRole054902C9Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthunauthenticatedUserRole054902C9Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/reference-to-amplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputs.amplifyappcsbaileysandbox5834d5d03cauthamplifyAuthIdentityPoolD953CFBFRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthIdentityPoolD953CFBFRef"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/reference-to-amplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputs.amplifyappcsbaileysandbox5834d5d03cfunctionpublishlambdaCFF95E6FArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputsamplifyappcsbaileysandbox5834d5d03cfunctionpublishlambdaCFF95E6FArn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/reference-to-amplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputs.amplifyappcsbaileysandbox5834d5d03cfunctiongenerateShortlambdaEF597C67Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputsamplifyappcsbaileysandbox5834d5d03cfunctiongenerateShortlambdaEF597C67Arn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/amplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/amplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4GraphQLUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4GraphQLUrl"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/amplifyappcsbaileysandbox5834d5d03cdataAWSShortsAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiB3EF18457DestinationBucketArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cdataAWSShortsAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiB3EF18457DestinationBucketArn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/amplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4GraphQLEndpointArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4GraphQLEndpointArn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/amplifyappcsbaileysandbox5834d5d03cdataAWSShortsHistoryNestedStackHistoryNestedStackResource632D694FOutputs.amplifyappcsbaileysandbox5834d5d03cdataAWSShortsHistoryHistoryTable666C312ATableArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cdataAWSShortsHistoryNestedStackHistoryNestedStackResource632D694FOutputsamplifyappcsbaileysandbox5834d5d03cdataAWSShortsHistoryHistoryTable666C312ATableArn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data/amplifyappcsbaileysandbox5834d5d03cdataAWSShortsHighlightNestedStackHighlightNestedStackResourceCE969592Outputs.amplifyappcsbaileysandbox5834d5d03cdataAWSShortsHighlightHighlightTable37339103TableArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cdataAWSShortsHighlightNestedStackHighlightNestedStackResourceCE969592Outputsamplifyappcsbaileysandbox5834d5d03cdataAWSShortsHighlightHighlightTable37339103TableArn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/data.NestedStack/data.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "data7552DF31"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/function/publish-lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "publishlambdaServiceRole9F06671B"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/function/publish-lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "publishlambdaB6011C28"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/function/generateShort-lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "generateShortlambdaServiceRoleB9B4D543"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/function/generateShort-lambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "generateShortlambdaServiceRoleDefaultPolicyC6BC8635"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/function/generateShort-lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "generateShortlambda06E6D1DA"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/function/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/function/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/function/amplifyappcsbaileysandbox5834d5d03cfunctionpublishlambdaCFF95E6FArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cfunctionpublishlambdaCFF95E6FArn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/function/amplifyappcsbaileysandbox5834d5d03cfunctiongenerateShortlambdaEF597C67Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cfunctiongenerateShortlambdaEF597C67Arn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/function/reference-to-amplifyappcsbaileysandbox5834d5d03cGenerateShortStackNestedStackGenerateShortStackNestedStackResource835B0B0COutputs.amplifyappcsbaileysandbox5834d5d03cGenerateShortStackGenerateShortStateMachineC203CF89Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cGenerateShortStackNestedStackGenerateShortStackNestedStackResource835B0B0COutputsamplifyappcsbaileysandbox5834d5d03cGenerateShortStackGenerateShortStateMachineC203CF89Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/function/reference-to-amplifyappcsbaileysandbox5834d5d03cstorageNestedStackstorageNestedStackResourceAF26F164Outputs.amplifyappcsbaileysandbox5834d5d03cstorageawsshortsBucketD0C3C9ADRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cstorageNestedStackstorageNestedStackResourceAF26F164Outputsamplifyappcsbaileysandbox5834d5d03cstorageawsshortsBucketD0C3C9ADRef"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/function/amplifyappcsbaileysandbox5834d5d03cfunctionpublishlambdaCFF95E6FRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cfunctionpublishlambdaCFF95E6FRef"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/function/amplifyappcsbaileysandbox5834d5d03cfunctiongenerateShortlambdaEF597C67Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cfunctiongenerateShortlambdaEF597C67Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/function.NestedStack/function.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "function1351588B"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/definedFunctions": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "definedFunctions"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/awsAppsyncApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncApiId"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/awsAppsyncApiEndpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncApiEndpoint"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/awsAppsyncAuthenticationType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncAuthenticationType"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/awsAppsyncRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncRegion"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/amplifyApiModelSchemaS3Uri": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyApiModelSchemaS3Uri"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/awsAppsyncAdditionalAuthenticationTypes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncAdditionalAuthenticationTypes"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/EventBridgeStack/AppSyncInvokeRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppSyncInvokeRole86DEAC6E"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/EventBridgeStack/AppSyncRule": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppSyncRule"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/EventBridgeStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/EventBridgeStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/EventBridgeStack/reference-to-amplifyappcsbaileysandbox5834d5d03cdataNestedStackdataNestedStackResource21649687Outputs.amplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cdataNestedStackdataNestedStackResource21649687Outputsamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/EventBridgeStack/reference-to-amplifyappcsbaileysandbox5834d5d03cdataNestedStackdataNestedStackResource21649687Outputs.amplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4GraphQLEndpointArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cdataNestedStackdataNestedStackResource21649687Outputsamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4GraphQLEndpointArn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/EventBridgeStack.NestedStack/EventBridgeStack.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EventBridgeStack71DACCEB"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/VideoUploadStateMachine/MediaConvertRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VideoUploadStateMachineMediaConvertRoleA9EA2594"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/VideoUploadStateMachine/ExtractTopicsFunc/ExtractTopicsBedrock/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VideoUploadStateMachineExtractTopicsFuncExtractTopicsBedrockServiceRole0D32C141"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/VideoUploadStateMachine/ExtractTopicsFunc/ExtractTopicsBedrock/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VideoUploadStateMachineExtractTopicsFuncExtractTopicsBedrockServiceRoleDefaultPolicy2AE6288F"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/VideoUploadStateMachine/ExtractTopicsFunc/ExtractTopicsBedrock/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VideoUploadStateMachineExtractTopicsFuncExtractTopicsBedrock59985044"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/VideoUploadStateMachine/ProcessTopicFunc/ProcessTopicsBedrock/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VideoUploadStateMachineProcessTopicFuncProcessTopicsBedrockServiceRole223EC598"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/VideoUploadStateMachine/ProcessTopicFunc/ProcessTopicsBedrock/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VideoUploadStateMachineProcessTopicFuncProcessTopicsBedrockServiceRoleDefaultPolicy4CA5C91D"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/VideoUploadStateMachine/ProcessTopicFunc/ProcessTopicsBedrock/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VideoUploadStateMachineProcessTopicFuncProcessTopicsBedrockF0791158"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/VideoUploadStateMachine/ExtractTimeframeFunc/ExtractTimeframe/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VideoUploadStateMachineExtractTimeframeFuncExtractTimeframeServiceRole6FF3ABFB"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/VideoUploadStateMachine/ExtractTimeframeFunc/ExtractTimeframe/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VideoUploadStateMachineExtractTimeframeFuncExtractTimeframeServiceRoleDefaultPolicy9BE33434"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/VideoUploadStateMachine/ExtractTimeframeFunc/ExtractTimeframe/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VideoUploadStateMachineExtractTimeframeFuncExtractTimeframe0BB6F0C6"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/VideoUploadStateMachine/VideoUploadStateMachine/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VideoUploadStateMachineRole15ED27D0"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/VideoUploadStateMachine/VideoUploadStateMachine/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VideoUploadStateMachineRoleDefaultPolicy0B091480"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/VideoUploadStateMachine/VideoUploadStateMachine/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VideoUploadStateMachine3E230CD6"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/VideoUploadStateMachineExecuteRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VideoUploadStateMachineExecuteRole94261CDA"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/VideoUploadStateMachineRule": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VideoUploadStateMachineRule"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/reference-to-amplifyappcsbaileysandbox5834d5d03cstorageNestedStackstorageNestedStackResourceAF26F164Outputs.amplifyappcsbaileysandbox5834d5d03cstorageawsshortsBucketD0C3C9ADArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cstorageNestedStackstorageNestedStackResourceAF26F164Outputsamplifyappcsbaileysandbox5834d5d03cstorageawsshortsBucketD0C3C9ADArn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/reference-to-amplifyappcsbaileysandbox5834d5d03cdataNestedStackdataNestedStackResource21649687Outputs.amplifyappcsbaileysandbox5834d5d03cdataAWSShortsHistoryNestedStackHistoryNestedStackResource632D694FOutputsamplifyappcsbaileysandbox5834d5d03cdataAWSShortsHistoryHistoryTable666C312ATableArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cdataNestedStackdataNestedStackResource21649687Outputsamplifyappcsbaileysandbox5834d5d03cdataAWSShortsHistoryNestedStackHistoryNestedStackResource632D694FOutputsamplifyappcsbaileysandbox5834d5d03F8BA6F88"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/reference-to-amplifyappcsbaileysandbox5834d5d03cdataNestedStackdataNestedStackResource21649687Outputs.amplifyappcsbaileysandbox5834d5d03cdataAWSShortsHighlightNestedStackHighlightNestedStackResourceCE969592Outputsamplifyappcsbaileysandbox5834d5d03cdataAWSShortsHighlightHighlightTable37339103TableArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cdataNestedStackdataNestedStackResource21649687Outputsamplifyappcsbaileysandbox5834d5d03cdataAWSShortsHighlightNestedStackHighlightNestedStackResourceCE969592Outputsamplifyappcsbaileysandbox5834d92FCFC13"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack/reference-to-amplifyappcsbaileysandbox5834d5d03cstorageNestedStackstorageNestedStackResourceAF26F164Outputs.amplifyappcsbaileysandbox5834d5d03cstorageawsshortsBucketD0C3C9ADRef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cstorageNestedStackstorageNestedStackResourceAF26F164Outputsamplifyappcsbaileysandbox5834d5d03cstorageawsshortsBucketD0C3C9ADRef"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/StepFunctionStack.NestedStack/StepFunctionStack.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StepFunctionStack87980DDC"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/GenerateShortStack/GenerateShortStateMachine/MediaConvertRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GenerateShortStateMachineMediaConvertRole1AEBF8B6"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/GenerateShortStack/GenerateShortStateMachine/CreateBackgroundFunc/PilLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GenerateShortStateMachineCreateBackgroundFuncPilLayerBACCEC6A"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/GenerateShortStack/GenerateShortStateMachine/CreateBackgroundFunc/CreateBackground/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GenerateShortStateMachineCreateBackgroundFuncCreateBackgroundServiceRoleFA7C0916"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/GenerateShortStack/GenerateShortStateMachine/CreateBackgroundFunc/CreateBackground/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GenerateShortStateMachineCreateBackgroundFuncCreateBackgroundServiceRoleDefaultPolicyE9BDCAF9"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/GenerateShortStack/GenerateShortStateMachine/CreateBackgroundFunc/CreateBackground/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GenerateShortStateMachineCreateBackgroundFuncCreateBackground50C6E400"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/GenerateShortStack/GenerateShortStateMachine/MediaConvertTemplateFunc/MakeShortTemplate/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GenerateShortStateMachineMediaConvertTemplateFuncMakeShortTemplateServiceRoleCB01B8FF"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/GenerateShortStack/GenerateShortStateMachine/MediaConvertTemplateFunc/MakeShortTemplate/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GenerateShortStateMachineMediaConvertTemplateFuncMakeShortTemplateB220DF8B"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/GenerateShortStack/GenerateShortStateMachine/GenerateShortStateMachine/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GenerateShortStateMachineRoleA286B7E9"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/GenerateShortStack/GenerateShortStateMachine/GenerateShortStateMachine/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GenerateShortStateMachineRoleDefaultPolicy167DCD2D"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/GenerateShortStack/GenerateShortStateMachine/GenerateShortStateMachine/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GenerateShortStateMachine9B91208F"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/GenerateShortStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/GenerateShortStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/GenerateShortStack/amplifyappcsbaileysandbox5834d5d03cGenerateShortStackGenerateShortStateMachineC203CF89Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyappcsbaileysandbox5834d5d03cGenerateShortStackGenerateShortStateMachineC203CF89Ref"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/GenerateShortStack/reference-to-amplifyappcsbaileysandbox5834d5d03cstorageNestedStackstorageNestedStackResourceAF26F164Outputs.amplifyappcsbaileysandbox5834d5d03cstorageawsshortsBucketD0C3C9ADArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifyappcsbaileysandbox5834d5d03cstorageNestedStackstorageNestedStackResourceAF26F164Outputsamplifyappcsbaileysandbox5834d5d03cstorageawsshortsBucketD0C3C9ADArn"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/GenerateShortStack.NestedStack/GenerateShortStack.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GenerateShortStack10C77807"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/amplify-app-csbailey-sandbox-5834d5d03c/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "amplify-app-csbailey-sandbox-5834d5d03c"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

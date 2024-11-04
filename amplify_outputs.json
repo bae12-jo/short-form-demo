@@ -1,0 +1,370 @@
+{
+  "auth": {
+    "user_pool_id": "ap-northeast-2_jhOJ2yWy3",
+    "aws_region": "ap-northeast-2",
+    "user_pool_client_id": "1hul72nihl1umlrqc4g5bfa928",
+    "identity_pool_id": "ap-northeast-2:15036bcf-b7fd-490e-9df8-ad2d28d620a3",
+    "mfa_methods": [],
+    "standard_required_attributes": [
+      "email"
+    ],
+    "username_attributes": [
+      "email"
+    ],
+    "user_verification_types": [
+      "email"
+    ],
+    "mfa_configuration": "NONE",
+    "password_policy": {
+      "min_length": 8,
+      "require_lowercase": true,
+      "require_numbers": true,
+      "require_symbols": true,
+      "require_uppercase": true
+    },
+    "unauthenticated_identities_enabled": true
+  },
+  "data": {
+    "url": "https://gn5ozk4szvb2javtjcwsbgf3oy.appsync-api.ap-northeast-2.amazonaws.com/graphql",
+    "aws_region": "ap-northeast-2",
+    "default_authorization_type": "AMAZON_COGNITO_USER_POOLS",
+    "authorization_types": [
+      "AWS_IAM"
+    ],
+    "model_introspection": {
+      "version": 1,
+      "models": {
+        "History": {
+          "name": "History",
+          "fields": {
+            "id": {
+              "name": "id",
+              "isArray": false,
+              "type": "ID",
+              "isRequired": true,
+              "attributes": []
+            },
+            "videoName": {
+              "name": "videoName",
+              "isArray": false,
+              "type": "String",
+              "isRequired": true,
+              "attributes": []
+            },
+            "modelID": {
+              "name": "modelID",
+              "isArray": false,
+              "type": "String",
+              "isRequired": true,
+              "attributes": []
+            },
+            "shortified": {
+              "name": "shortified",
+              "isArray": false,
+              "type": "Boolean",
+              "isRequired": true,
+              "attributes": []
+            },
+            "stage": {
+              "name": "stage",
+              "isArray": false,
+              "type": "Int",
+              "isRequired": true,
+              "attributes": []
+            },
+            "createdAt": {
+              "name": "createdAt",
+              "isArray": false,
+              "type": "AWSDateTime",
+              "isRequired": false,
+              "attributes": [],
+              "isReadOnly": true
+            },
+            "updatedAt": {
+              "name": "updatedAt",
+              "isArray": false,
+              "type": "AWSDateTime",
+              "isRequired": false,
+              "attributes": [],
+              "isReadOnly": true
+            }
+          },
+          "syncable": true,
+          "pluralName": "Histories",
+          "attributes": [
+            {
+              "type": "model",
+              "properties": {}
+            },
+            {
+              "type": "auth",
+              "properties": {
+                "rules": [
+                  {
+                    "provider": "userPools",
+                    "ownerField": "owner",
+                    "allow": "owner",
+                    "identityClaim": "cognito:username",
+                    "operations": [
+                      "create",
+                      "update",
+                      "delete",
+                      "read"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "primaryKeyInfo": {
+            "isCustomPrimaryKey": false,
+            "primaryKeyFieldName": "id",
+            "sortKeyFieldNames": []
+          }
+        },
+        "Highlight": {
+          "name": "Highlight",
+          "fields": {
+            "VideoName": {
+              "name": "VideoName",
+              "isArray": false,
+              "type": "String",
+              "isRequired": true,
+              "attributes": []
+            },
+            "Index": {
+              "name": "Index",
+              "isArray": false,
+              "type": "String",
+              "isRequired": true,
+              "attributes": []
+            },
+            "duration": {
+              "name": "duration",
+              "isArray": false,
+              "type": "Int",
+              "isRequired": false,
+              "attributes": []
+            },
+            "Question": {
+              "name": "Question",
+              "isArray": false,
+              "type": "String",
+              "isRequired": false,
+              "attributes": []
+            },
+            "Text": {
+              "name": "Text",
+              "isArray": false,
+              "type": "String",
+              "isRequired": false,
+              "attributes": []
+            },
+            "createdAt": {
+              "name": "createdAt",
+              "isArray": false,
+              "type": "AWSDateTime",
+              "isRequired": false,
+              "attributes": [],
+              "isReadOnly": true
+            },
+            "updatedAt": {
+              "name": "updatedAt",
+              "isArray": false,
+              "type": "AWSDateTime",
+              "isRequired": false,
+              "attributes": [],
+              "isReadOnly": true
+            }
+          },
+          "syncable": true,
+          "pluralName": "Highlights",
+          "attributes": [
+            {
+              "type": "model",
+              "properties": {}
+            },
+            {
+              "type": "key",
+              "properties": {
+                "fields": [
+                  "VideoName",
+                  "Index"
+                ]
+              }
+            },
+            {
+              "type": "auth",
+              "properties": {
+                "rules": [
+                  {
+                    "provider": "userPools",
+                    "ownerField": "owner",
+                    "allow": "owner",
+                    "identityClaim": "cognito:username",
+                    "operations": [
+                      "create",
+                      "update",
+                      "delete",
+                      "read"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "primaryKeyInfo": {
+            "isCustomPrimaryKey": true,
+            "primaryKeyFieldName": "VideoName",
+            "sortKeyFieldNames": [
+              "Index"
+            ]
+          }
+        }
+      },
+      "enums": {},
+      "nonModels": {
+        "StageChanged": {
+          "name": "StageChanged",
+          "fields": {
+            "videoId": {
+              "name": "videoId",
+              "isArray": false,
+              "type": "String",
+              "isRequired": true,
+              "attributes": []
+            },
+            "stage": {
+              "name": "stage",
+              "isArray": false,
+              "type": "Int",
+              "isRequired": true,
+              "attributes": []
+            }
+          }
+        },
+        "ShortsInput": {
+          "name": "ShortsInput",
+          "fields": {
+            "CropHeight": {
+              "name": "CropHeight",
+              "isArray": false,
+              "type": "Int",
+              "isRequired": false,
+              "attributes": []
+            },
+            "CropWidth": {
+              "name": "CropWidth",
+              "isArray": false,
+              "type": "Int",
+              "isRequired": false,
+              "attributes": []
+            },
+            "SectionDuration": {
+              "name": "SectionDuration",
+              "isArray": false,
+              "type": "Float",
+              "isRequired": false,
+              "attributes": []
+            },
+            "Xoffset": {
+              "name": "Xoffset",
+              "isArray": false,
+              "type": "Float",
+              "isRequired": false,
+              "attributes": []
+            },
+            "Yoffset": {
+              "name": "Yoffset",
+              "isArray": false,
+              "type": "Float",
+              "isRequired": false,
+              "attributes": []
+            }
+          }
+        }
+      },
+      "queries": {
+        "generateShort": {
+          "name": "generateShort",
+          "isArray": false,
+          "type": "String",
+          "isRequired": false,
+          "arguments": {
+            "inputs": {
+              "name": "inputs",
+              "isArray": false,
+              "type": "String",
+              "isRequired": true
+            },
+            "videoId": {
+              "name": "videoId",
+              "isArray": false,
+              "type": "String",
+              "isRequired": true
+            },
+            "highlight": {
+              "name": "highlight",
+              "isArray": false,
+              "type": "Int",
+              "isRequired": true
+            },
+            "question": {
+              "name": "question",
+              "isArray": false,
+              "type": "String",
+              "isRequired": true
+            }
+          }
+        }
+      },
+      "mutations": {
+        "publish": {
+          "name": "publish",
+          "isArray": false,
+          "type": {
+            "nonModel": "StageChanged"
+          },
+          "isRequired": false,
+          "arguments": {
+            "videoId": {
+              "name": "videoId",
+              "isArray": false,
+              "type": "String",
+              "isRequired": true
+            },
+            "stage": {
+              "name": "stage",
+              "isArray": false,
+              "type": "Int",
+              "isRequired": true
+            }
+          }
+        }
+      },
+      "subscriptions": {
+        "receive": {
+          "name": "receive",
+          "isArray": false,
+          "type": {
+            "nonModel": "StageChanged"
+          },
+          "isRequired": false,
+          "arguments": {
+            "videoId": {
+              "name": "videoId",
+              "isArray": false,
+              "type": "String",
+              "isRequired": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "storage": {
+    "aws_region": "ap-northeast-2",
+    "bucket_name": "amplify-app-csbailey-sandb-awsshortsbucketd126983b-a7oexsrfxqyq"
+  },
+  "version": "1"
+}

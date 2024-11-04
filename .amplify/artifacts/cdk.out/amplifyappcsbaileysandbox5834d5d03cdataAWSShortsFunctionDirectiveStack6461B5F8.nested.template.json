@@ -1,0 +1,671 @@
+{
+ "Description": "An auto-generated nested stack for the @function directive.",
+ "AWSTemplateFormatVersion": "2010-09-09",
+ "Conditions": {
+  "HasEnvironmentParameter": {
+   "Fn::Not": [
+    {
+     "Fn::Equals": [
+      "NONE",
+      "NONE"
+     ]
+    }
+   ]
+  },
+  "CDKMetadataAvailable": {
+   "Fn::Or": [
+    {
+     "Fn::Or": [
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "af-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-east-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-northeast-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-northeast-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ap-southeast-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "ca-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "cn-north-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "cn-northwest-1"
+       ]
+      }
+     ]
+    },
+    {
+     "Fn::Or": [
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-north-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-west-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-west-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "eu-west-3"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "il-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "me-central-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "me-south-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "sa-east-1"
+       ]
+      }
+     ]
+    },
+    {
+     "Fn::Or": [
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-east-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-east-2"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-west-1"
+       ]
+      },
+      {
+       "Fn::Equals": [
+        {
+         "Ref": "AWS::Region"
+        },
+        "us-west-2"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "Resources": {
+  "FnPublishLambdaDataSourceServiceRole57F064DE": {
+   "Type": "AWS::IAM::Role",
+   "Properties": {
+    "AssumeRolePolicyDocument": {
+     "Statement": [
+      {
+       "Action": "sts:AssumeRole",
+       "Effect": "Allow",
+       "Principal": {
+        "Service": "appsync.amazonaws.com"
+       }
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "Tags": [
+     {
+      "Key": "amplify:deployment-type",
+      "Value": "sandbox"
+     },
+     {
+      "Key": "amplify:friendly-name",
+      "Value": "AWS-Shorts"
+     },
+     {
+      "Key": "created-by",
+      "Value": "amplify"
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/FnPublishLambdaDataSource/ServiceRole/Resource"
+   }
+  },
+  "FnPublishLambdaDataSourceServiceRoleDefaultPolicy8B7A66C3": {
+   "Type": "AWS::IAM::Policy",
+   "Properties": {
+    "PolicyDocument": {
+     "Statement": [
+      {
+       "Action": "lambda:InvokeFunction",
+       "Effect": "Allow",
+       "Resource": [
+        {
+         "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputsamplifyappcsbaileysandbox5834d5d03cfunctionpublishlambdaCFF95E6FArn"
+        },
+        {
+         "Fn::Join": [
+          "",
+          [
+           {
+            "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputsamplifyappcsbaileysandbox5834d5d03cfunctionpublishlambdaCFF95E6FArn"
+           },
+           ":*"
+          ]
+         ]
+        }
+       ]
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "PolicyName": "FnPublishLambdaDataSourceServiceRoleDefaultPolicy8B7A66C3",
+    "Roles": [
+     {
+      "Ref": "FnPublishLambdaDataSourceServiceRole57F064DE"
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/FnPublishLambdaDataSource/ServiceRole/DefaultPolicy/Resource"
+   }
+  },
+  "FnPublishLambdaDataSource": {
+   "Type": "AWS::AppSync::DataSource",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId"
+    },
+    "LambdaConfig": {
+     "LambdaFunctionArn": {
+      "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputsamplifyappcsbaileysandbox5834d5d03cfunctionpublishlambdaCFF95E6FArn"
+     }
+    },
+    "Name": "FnPublishLambdaDataSource",
+    "ServiceRoleArn": {
+     "Fn::GetAtt": [
+      "FnPublishLambdaDataSourceServiceRole57F064DE",
+      "Arn"
+     ]
+    },
+    "Type": "AWS_LAMBDA"
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/FnPublishLambdaDataSource/Resource"
+   }
+  },
+  "InvokeFnPublishLambdaDataSourceInvokeFnPublishLambdaDataSourceAppSyncFunction72586A95": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId"
+    },
+    "DataSourceName": {
+     "Fn::GetAtt": [
+      "FnPublishLambdaDataSource",
+      "Name"
+     ]
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "InvokeFnPublishLambdaDataSource",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/38e3794cc162207664e18463553bcb33047e37c7208329ec9cf26f134e7224e8.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/43c39d3f3064d951a274ad91ec62cc12e1c8dab308d0dfa845e4de9f0a874e57.vtl"
+    }
+   },
+   "DependsOn": [
+    "FnPublishLambdaDataSource"
+   ],
+   "Metadata": {
+    "aws:cdk:path": "amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/InvokeFnPublishLambdaDataSource/InvokeFnPublishLambdaDataSource.AppSyncFunction"
+   }
+  },
+  "MutationpublishResolver": {
+   "Type": "AWS::AppSync::Resolver",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId"
+    },
+    "FieldName": "publish",
+    "Kind": "PIPELINE",
+    "PipelineConfig": {
+     "Functions": [
+      {
+       "Fn::GetAtt": [
+        "MutationPublishAuthFNMutationPublishAuthFNAppSyncFunction507E9F84",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "InvokeFnPublishLambdaDataSourceInvokeFnPublishLambdaDataSourceAppSyncFunction72586A95",
+        "FunctionId"
+       ]
+      }
+     ]
+    },
+    "RequestMappingTemplate": {
+     "Fn::Join": [
+      "",
+      [
+       "## [Start] Stash resolver specific context.. **\n$util.qr($ctx.stash.put(\"typeName\", \"Mutation\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"publish\"))\n$util.qr($ctx.stash.put(\"authRole\", \"arn:aws:sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthauthenticatedUserRole4EF6F676Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"unauthRole\", \"arn:aws:sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthunauthenticatedUserRole054902C9Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"identityPoolId\", \"",
+       {
+        "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthIdentityPoolD953CFBFRef"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"adminRoles\", []))\n{}\n## [End] Stash resolver specific context.. **"
+      ]
+     ]
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/387d5992f5fc03d05de27289457dcc374a84c42a889acb504aff1031047dde00.vtl"
+    },
+    "TypeName": "Mutation"
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/mutationPublishResolver"
+   }
+  },
+  "FnGenerateShortLambdaDataSourceServiceRole9B48900F": {
+   "Type": "AWS::IAM::Role",
+   "Properties": {
+    "AssumeRolePolicyDocument": {
+     "Statement": [
+      {
+       "Action": "sts:AssumeRole",
+       "Effect": "Allow",
+       "Principal": {
+        "Service": "appsync.amazonaws.com"
+       }
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "Tags": [
+     {
+      "Key": "amplify:deployment-type",
+      "Value": "sandbox"
+     },
+     {
+      "Key": "amplify:friendly-name",
+      "Value": "AWS-Shorts"
+     },
+     {
+      "Key": "created-by",
+      "Value": "amplify"
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/FnGenerateShortLambdaDataSource/ServiceRole/Resource"
+   }
+  },
+  "FnGenerateShortLambdaDataSourceServiceRoleDefaultPolicy8F1A6FA6": {
+   "Type": "AWS::IAM::Policy",
+   "Properties": {
+    "PolicyDocument": {
+     "Statement": [
+      {
+       "Action": "lambda:InvokeFunction",
+       "Effect": "Allow",
+       "Resource": [
+        {
+         "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputsamplifyappcsbaileysandbox5834d5d03cfunctiongenerateShortlambdaEF597C67Arn"
+        },
+        {
+         "Fn::Join": [
+          "",
+          [
+           {
+            "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputsamplifyappcsbaileysandbox5834d5d03cfunctiongenerateShortlambdaEF597C67Arn"
+           },
+           ":*"
+          ]
+         ]
+        }
+       ]
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "PolicyName": "FnGenerateShortLambdaDataSourceServiceRoleDefaultPolicy8F1A6FA6",
+    "Roles": [
+     {
+      "Ref": "FnGenerateShortLambdaDataSourceServiceRole9B48900F"
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/FnGenerateShortLambdaDataSource/ServiceRole/DefaultPolicy/Resource"
+   }
+  },
+  "FnGenerateShortLambdaDataSource": {
+   "Type": "AWS::AppSync::DataSource",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId"
+    },
+    "LambdaConfig": {
+     "LambdaFunctionArn": {
+      "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputsamplifyappcsbaileysandbox5834d5d03cfunctiongenerateShortlambdaEF597C67Arn"
+     }
+    },
+    "Name": "FnGenerateShortLambdaDataSource",
+    "ServiceRoleArn": {
+     "Fn::GetAtt": [
+      "FnGenerateShortLambdaDataSourceServiceRole9B48900F",
+      "Arn"
+     ]
+    },
+    "Type": "AWS_LAMBDA"
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/FnGenerateShortLambdaDataSource/Resource"
+   }
+  },
+  "InvokeFnGenerateShortLambdaDataSourceInvokeFnGenerateShortLambdaDataSourceAppSyncFunction3AC69472": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId"
+    },
+    "DataSourceName": {
+     "Fn::GetAtt": [
+      "FnGenerateShortLambdaDataSource",
+      "Name"
+     ]
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "InvokeFnGenerateShortLambdaDataSource",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/71620c7b1dd211cb3e31249d2b20eebafd1a3375f2b06432f4766434b65b68a7.vtl"
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/43c39d3f3064d951a274ad91ec62cc12e1c8dab308d0dfa845e4de9f0a874e57.vtl"
+    }
+   },
+   "DependsOn": [
+    "FnGenerateShortLambdaDataSource"
+   ],
+   "Metadata": {
+    "aws:cdk:path": "amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/InvokeFnGenerateShortLambdaDataSource/InvokeFnGenerateShortLambdaDataSource.AppSyncFunction"
+   }
+  },
+  "QuerygenerateShortResolver": {
+   "Type": "AWS::AppSync::Resolver",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId"
+    },
+    "FieldName": "generateShort",
+    "Kind": "PIPELINE",
+    "PipelineConfig": {
+     "Functions": [
+      {
+       "Fn::GetAtt": [
+        "QueryGenerateShortAuthFNQueryGenerateShortAuthFNAppSyncFunction18E34601",
+        "FunctionId"
+       ]
+      },
+      {
+       "Fn::GetAtt": [
+        "InvokeFnGenerateShortLambdaDataSourceInvokeFnGenerateShortLambdaDataSourceAppSyncFunction3AC69472",
+        "FunctionId"
+       ]
+      }
+     ]
+    },
+    "RequestMappingTemplate": {
+     "Fn::Join": [
+      "",
+      [
+       "## [Start] Stash resolver specific context.. **\n$util.qr($ctx.stash.put(\"typeName\", \"Query\"))\n$util.qr($ctx.stash.put(\"fieldName\", \"generateShort\"))\n$util.qr($ctx.stash.put(\"authRole\", \"arn:aws:sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthauthenticatedUserRole4EF6F676Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"unauthRole\", \"arn:aws:sts::",
+       {
+        "Ref": "AWS::AccountId"
+       },
+       ":assumed-role/",
+       {
+        "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthunauthenticatedUserRole054902C9Ref"
+       },
+       "/CognitoIdentityCredentials\"))\n$util.qr($ctx.stash.put(\"identityPoolId\", \"",
+       {
+        "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthIdentityPoolD953CFBFRef"
+       },
+       "\"))\n$util.qr($ctx.stash.put(\"adminRoles\", []))\n{}\n## [End] Stash resolver specific context.. **"
+      ]
+     ]
+    },
+    "ResponseMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/387d5992f5fc03d05de27289457dcc374a84c42a889acb504aff1031047dde00.vtl"
+    },
+    "TypeName": "Query"
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/queryGenerateShortResolver"
+   }
+  },
+  "MutationPublishAuthFNMutationPublishAuthFNAppSyncFunction507E9F84": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPINONEDS7279B4CDName"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "MutationPublishAuthFN",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/d485feb4926057597553f61b486dd373ec4f9429592947d8009a1a2c3edcf0e3.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/MutationPublishAuthFN/MutationPublishAuthFN.AppSyncFunction"
+   }
+  },
+  "QueryGenerateShortAuthFNQueryGenerateShortAuthFNAppSyncFunction18E34601": {
+   "Type": "AWS::AppSync::FunctionConfiguration",
+   "Properties": {
+    "ApiId": {
+     "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId"
+    },
+    "DataSourceName": {
+     "Ref": "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPINONEDS7279B4CDName"
+    },
+    "FunctionVersion": "2018-05-29",
+    "Name": "QueryGenerateShortAuthFN",
+    "RequestMappingTemplateS3Location": {
+     "Fn::Sub": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/8e18f3cebc70282364886a18ce867a8409c5568357ceaed6f86c71740cb443eb.vtl"
+    },
+    "ResponseMappingTemplate": "$util.toJson({})"
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/QueryGenerateShortAuthFN/QueryGenerateShortAuthFN.AppSyncFunction"
+   }
+  },
+  "CDKMetadata": {
+   "Type": "AWS::CDK::Metadata",
+   "Properties": {
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/1VOyw7CMAz7Fu5dYEN8AA9xQgiND0ChDVPY1qKlBaFp/05bxIGTY9mxXUG5KmExw5cU2rRFx1cYjySezNmjbtX2ZrfOGvbsrIquy4iPh7ythvGA/dXgDj2eXRg0Je8/2wer02NMuHETBswpUahJXPekYVKMPYy167I/48l1rN+Jfq9JyfKCIuQF1gkih03QLfkNCk0qheXGrMbZDdvm15KESVlnCO4yf1YVrKCc3YW5GIL13BPUX/wAXBQriwsBAAA="
+   },
+   "Metadata": {
+    "aws:cdk:path": "amplify-app-csbailey-sandbox-5834d5d03c/data/AWS-Shorts/FunctionDirectiveStack/CDKMetadata/Default"
+   },
+   "Condition": "CDKMetadataAvailable"
+  }
+ },
+ "Parameters": {
+  "referencetoamplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputsamplifyappcsbaileysandbox5834d5d03cfunctionpublishlambdaCFF95E6FArn": {
+   "Type": "String"
+  },
+  "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPIF90989E4ApiId": {
+   "Type": "String"
+  },
+  "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthauthenticatedUserRole4EF6F676Ref": {
+   "Type": "String"
+  },
+  "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthunauthenticatedUserRole054902C9Ref": {
+   "Type": "String"
+  },
+  "referencetoamplifyappcsbaileysandbox5834d5d03cauthNestedStackauthNestedStackResourceB9B163BCOutputsamplifyappcsbaileysandbox5834d5d03cauthamplifyAuthIdentityPoolD953CFBFRef": {
+   "Type": "String"
+  },
+  "referencetoamplifyappcsbaileysandbox5834d5d03cfunctionNestedStackfunctionNestedStackResource9F4F4DFEOutputsamplifyappcsbaileysandbox5834d5d03cfunctiongenerateShortlambdaEF597C67Arn": {
+   "Type": "String"
+  },
+  "referencetoamplifyappcsbaileysandbox5834d5d03cdataAWSShortsGraphQLAPINONEDS7279B4CDName": {
+   "Type": "String"
+  }
+ }
+}

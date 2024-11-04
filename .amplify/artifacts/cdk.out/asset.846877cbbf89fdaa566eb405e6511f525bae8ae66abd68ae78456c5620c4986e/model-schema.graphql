@@ -1,0 +1,44 @@
+type History @model @auth(rules: [{allow: owner, ownerField: "owner"}])
+{
+  videoName: String!
+  modelID: String!
+  shortified: Boolean!
+  stage: Int!
+}
+
+type Highlight @model @auth(rules: [{allow: owner, ownerField: "owner"}])
+{
+  VideoName: String! @primaryKey(sortKeyFields: ["Index"])
+  Index: String!
+  duration: Int
+  Question: String
+  Text: String
+}
+
+type StageChanged @aws_cognito_user_pools @aws_iam
+{
+  videoId: String!
+  stage: Int!
+}
+
+type ShortsInput 
+{
+  CropHeight: Int
+  CropWidth: Int
+  SectionDuration: Float
+  Xoffset: Float
+  Yoffset: Float
+}
+
+type Mutation {
+  publish(videoId: String!, stage: Int!): StageChanged @function(name: "FnPublish") @auth(rules: [{allow: private},
+  {allow: public, provider: iam}])
+}
+
+type Query {
+  generateShort(inputs: String!, videoId: String!, highlight: Int!, question: String!): String @function(name: "FnGenerateShort") @auth(rules: [{allow: private}])
+}
+
+type Subscription {
+  receive(videoId: String!): StageChanged @aws_subscribe(mutations: ["publish"]) @aws_cognito_user_pools
+}

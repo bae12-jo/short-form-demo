@@ -1,0 +1,62 @@
+## [Start] Set query expression for key **
+#if( $util.isNull($ctx.args.VideoName) && !$util.isNull($ctx.args.sortDirection) )
+  $util.error("When providing argument 'sortDirection' you must also provide argument 'VideoName'.", "InvalidArgumentsError")
+#end
+#set( $modelQueryExpression = {} )
+## [Start] Validate key arguments. **
+#if( !$util.isNull($ctx.args.Index) && $util.isNull($ctx.args.VideoName) )
+  $util.error("When providing argument 'Index' you must also provide arguments VideoName", "InvalidArgumentsError")
+#end
+## [End] Validate key arguments. **
+#if( !$util.isNull($ctx.args.VideoName) )
+  #set( $modelQueryExpression.expression = "#VideoName = :VideoName" )
+  #set( $modelQueryExpression.expressionNames = {
+  "#VideoName": "VideoName"
+} )
+  #set( $modelQueryExpression.expressionValues = {
+  ":VideoName": {
+      "S": "$ctx.args.VideoName"
+  }
+} )
+#end
+## [Start] Applying Key Condition **
+#if( !$util.isNull($ctx.args.Index) && !$util.isNull($ctx.args.Index.beginsWith) )
+  #set( $modelQueryExpression.expression = "$modelQueryExpression.expression AND begins_with(#sortKey, :sortKey)" )
+  $util.qr($modelQueryExpression.expressionNames.put("#sortKey", "Index"))
+  $util.qr($modelQueryExpression.expressionValues.put(":sortKey", { "S": "$ctx.args.Index.beginsWith" }))
+#end
+#if( !$util.isNull($ctx.args.Index) && !$util.isNull($ctx.args.Index.between) )
+  #set( $modelQueryExpression.expression = "$modelQueryExpression.expression AND #sortKey BETWEEN :sortKey0 AND :sortKey1" )
+  $util.qr($modelQueryExpression.expressionNames.put("#sortKey", "Index"))
+  $util.qr($modelQueryExpression.expressionValues.put(":sortKey0", { "S": "$ctx.args.Index.between[0]" }))
+  $util.qr($modelQueryExpression.expressionValues.put(":sortKey1", { "S": "$ctx.args.Index.between[1]" }))
+#end
+#if( !$util.isNull($ctx.args.Index) && !$util.isNull($ctx.args.Index.eq) )
+  #set( $modelQueryExpression.expression = "$modelQueryExpression.expression AND #sortKey = :sortKey" )
+  $util.qr($modelQueryExpression.expressionNames.put("#sortKey", "Index"))
+  $util.qr($modelQueryExpression.expressionValues.put(":sortKey", { "S": "$ctx.args.Index.eq" }))
+#end
+#if( !$util.isNull($ctx.args.Index) && !$util.isNull($ctx.args.Index.lt) )
+  #set( $modelQueryExpression.expression = "$modelQueryExpression.expression AND #sortKey < :sortKey" )
+  $util.qr($modelQueryExpression.expressionNames.put("#sortKey", "Index"))
+  $util.qr($modelQueryExpression.expressionValues.put(":sortKey", { "S": "$ctx.args.Index.lt" }))
+#end
+#if( !$util.isNull($ctx.args.Index) && !$util.isNull($ctx.args.Index.le) )
+  #set( $modelQueryExpression.expression = "$modelQueryExpression.expression AND #sortKey <= :sortKey" )
+  $util.qr($modelQueryExpression.expressionNames.put("#sortKey", "Index"))
+  $util.qr($modelQueryExpression.expressionValues.put(":sortKey", { "S": "$ctx.args.Index.le" }))
+#end
+#if( !$util.isNull($ctx.args.Index) && !$util.isNull($ctx.args.Index.gt) )
+  #set( $modelQueryExpression.expression = "$modelQueryExpression.expression AND #sortKey > :sortKey" )
+  $util.qr($modelQueryExpression.expressionNames.put("#sortKey", "Index"))
+  $util.qr($modelQueryExpression.expressionValues.put(":sortKey", { "S": "$ctx.args.Index.gt" }))
+#end
+#if( !$util.isNull($ctx.args.Index) && !$util.isNull($ctx.args.Index.ge) )
+  #set( $modelQueryExpression.expression = "$modelQueryExpression.expression AND #sortKey >= :sortKey" )
+  $util.qr($modelQueryExpression.expressionNames.put("#sortKey", "Index"))
+  $util.qr($modelQueryExpression.expressionValues.put(":sortKey", { "S": "$ctx.args.Index.ge" }))
+#end
+## [End] Applying Key Condition **
+## [End] Set query expression for key **
+$util.qr($ctx.stash.put("modelQueryExpression", $modelQueryExpression))
+{}
